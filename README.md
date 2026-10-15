@@ -3,9 +3,9 @@
 
 ## File Structure:
 - Individual Files
--- Jake = Table.blend
--- Sam = .blend
--- Gilbert = .blend
+  - Jake = Table.blend
+  - Sam = .blend
+  - Gilbert = .blend
 - ...
 
 
