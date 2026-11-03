@@ -58,7 +58,7 @@ We need to bake every element of the materials into the materials to stop any pr
 Lets start with the leather material.
 We will start with the base colour. This holds the colour and the pattern of the leather section of the barstool:
 
-![alt text](ImagesForREADME/LeatherBaseColourBakeSetup.png) 
+![alt text](ImagesForREADME/LeatherBaseColourBakeSetup.png)
 
 The pattern is very fine so we set the image to 4096x4096 pixels so as to not lose any information.
 Then we switch the render engine to cycles to allow us the option to bake this, for base colour we want to set the bake type to Diffuse and make the only contribution Color.
@@ -154,10 +154,12 @@ Importing the Jigger was the same process as the metal texture in the bar stool.
 
 ![alt text](ImagesForREADME/JiggerSuccesfulImport.png)
 
+**Animating** 
+
 *Step 6-*
 Now that we have our objects we can start to animate.
 
-I wanted to create a scene where the camera pans around each of the objects showing off the models and the textures. Then, as the camera passes the barstool it knocks it and the barstool falls, hitting a cigarette, and sending the cigarette flying and landing in the jigger.
+I wanted to create a scene where the camera pans around each of the objects showing off the models and the textures. Then, as the camera passes the barstool it knocks it and the barstool falls, hitting a cigarette, and sending the cigarette flying in slow motion and landing in the jigger.
 
 I used keyframes to model where I wanted the camera to move, adjusting the aperature, focal length, and manual focus as required to keep objects looking sharp through the camera.
 
@@ -182,3 +184,25 @@ This made the rate of rotation look much better for version 2 of the output but 
 ![alt text](ImagesForREADME/UnrealOutputSequencerV2.png)
 
 To get version two of the unreal output to github I had to export it with quality high instead of epic so that it was under the 100MB restriction of github.
+
+*Step 7-*
+To make the cigarette flight look more natural I decided to change the flight path to be steeper which did make it look more natural, I also did not like how askey the rotation was, I found this menu:
+
+![alt text](ImagesForREADME/RotationCurves.png)
+
+Which enabled me to flatten the curves for pitch and yaw to make the rotation look more like it was on one axis, I squished these curves and that make the flight rotation something I was more happy with.
+
+There was also an issue with the cigarette clipping into the cushion of the stool so I adjusted the flight path to prevent this.
+
+I also edited the skybox to give the scene a more evening-like glow:
+![alt text](ImagesForREADME/LightEditing.png)
+
+![alt text](ImagesForREADME/EveningLightResult.png)
+
+I also changed the material of the plane the scene was sitting on to a material included in the unreal engine which looked like wood to give the feeling of an oldschool hardwood floored pub:
+
+![alt text](ImagesForREADME/NewFloor.png)
+
+I also added walls to the room to break the floating in space scene.
+
+![alt text](ImagesForREADME/RoomWithWalls.png)
