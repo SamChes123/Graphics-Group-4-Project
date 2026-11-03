@@ -180,3 +180,5 @@ To make the cigarette flight look more natural I decided that the rate at which 
 This made the rate of rotation look much better for version 2 of the output but there was still something not quite right about it so I will need to fix that in version 3.
 
 ![alt text](ImagesForREADME/UnrealOutputSequencerV2.png)
+
+To get version two of the unreal output to github I had to export it with quality high instead of epic so that it was under the 100MB restriction of github.
